@@ -11,11 +11,11 @@ public class Calculadora {
                 return num1 * num2;
             case "/":
                 if (num2 == 0) {
-                    throw new ArithmeticException("No se puede dividir por cero.");
+                    System.out.println("No se puede dividir por cero.");
                 }
                 return num1 / num2;
             default:
-                throw new IllegalArgumentException("Operador no valido.");
+                System.out.println("Operador no valido.");
         }
     }
 }
